@@ -1192,13 +1192,13 @@ void check_button_status(void)
 
 	if (sw0 == true)
 	{
-		debug_printGood("  MAIN: Button SW0 Press Count %d", button_press_data.sw0_press_count);
+		debug_printGood("  MAIN: Button SW0 Press Count %lu", button_press_data.sw0_press_count);
 		RETURN_IF_FAILED(append_button_press_telemetry(&jw, span_event_name_button_sw0, button_press_data.sw0_press_count));
 	}
 
 	if (sw1 == true)
 	{
-		debug_printGood("  MAIN: Button SW1 Press Count %d", button_press_data.sw1_press_count);
+		debug_printGood("  MAIN: Button SW1 Press Count %lu", button_press_data.sw1_press_count);
 		RETURN_IF_FAILED(append_button_press_telemetry(&jw, span_event_name_button_sw1, button_press_data.sw1_press_count));
 	}
 

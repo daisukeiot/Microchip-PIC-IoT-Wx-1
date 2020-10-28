@@ -106,7 +106,6 @@ void application_init() {
 #endif   
 	debug_setPrefix(attDeviceID);
 
-	debug_printGood("   APP: Starting WIFI_SOFT_AP");
 	mode = WIFI_DEFAULT;
 
 	if (!SW0_Value && SW1_Value)
